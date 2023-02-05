@@ -24,7 +24,7 @@ function Vid (props) {
                        Play
                 </button>
                 </div>
-                <video ref={videoRef} src={Highlights} height="2000px" width="1400px" autoPlay={true} muted/>
+                <video ref={videoRef} src={Highlights} autoPlay loop muted className="w-full h-auto"/>
                 
             </div>
         )
