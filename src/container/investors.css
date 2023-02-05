@@ -7,6 +7,9 @@
 #ball{
     animation: ballRotate 1.3s ease infinite
 }
+#test{
+  animation: openup 2s ease;
+}
 
 @keyframes jump{
     0% {
@@ -65,4 +68,12 @@
     100%{
         transform: rotate(360deg);
     }
+}
+@keyframes openup{
+  0%{
+    height: 1px;
+  }
+  100%{
+    height: 500px;
+  }
 }

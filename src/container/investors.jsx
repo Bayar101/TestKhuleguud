@@ -11,6 +11,7 @@ import NBA from '../assets/NBA-logo-png.png';
 import Dcrown from '../assets/D_Crown_White.png';
 import Footer from "./footer";
 import Jijigzurag from '../container/jijigZurag'
+// import Video from "./video";
 
 const Investors = ()=>{
     const Sponsors = [
@@ -52,13 +53,15 @@ const Investors = ()=>{
    
     
     return(
+        
         <div className="w-full">
+        
             <div className="w-[full] h-[1000px] bg-[red] px-[100px] pt-[50px]">
             <Jijigzurag />
             </div>
             
             {
-                show?<div id="test" className="w-full h-[400px] bg-[#141414] px-[5%]">
+                show?<div id="test" className="w-full h-[500px] bg-[#141414] px-[5%]">
                 <div className="w-full pl-[50px] py-[20px] h-[15%]">
                     <p className="uppercase text-[2rem] font-[Carter] text-[white]">sponsors</p>
                 </div>
@@ -74,11 +77,11 @@ const Investors = ()=>{
             </div>:null
             }
 
-            <div  className="w-full h-[50vh] bg-[#141414] relative">
+            <div  className="w-full h-[0.1px] bg-[#141414] relative">
                 <div id='box' className="w-auto absolute right-0 top-[-290px]">
                     <div id='Basketball' className="absolute top-[-100px] right-0 w-[100px] h-auto rounded-[50%] cursor-pointer"
                     onClick={()=>setShow(!show)}>
-                        <img className="w-full h-full" id='ball' src={Basketball} alt="/" />
+                        <img className="w-full h-full" id='ball' src={Basketball} alt="/" draggable='false' />
                     </div>
                 </div>
             </div>
