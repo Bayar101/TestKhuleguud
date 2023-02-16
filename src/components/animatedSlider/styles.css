@@ -1,0 +1,91 @@
+#deesh{
+    animation: deeshee 1s ease-in-out;
+}
+#doosh{
+    animation: dooshoo 1s ease-in-out;
+}
+#deesh1{
+    animation: deeshee1 1s ease-in-out;
+}
+#doosh1{
+    animation: dooshoo1 1s ease-in-out;
+}
+#deesh2{
+    animation: deeshee2 1s ease-in-out;
+}
+#doosh2{
+    animation: dooshoo2 1s ease-in-out;
+}
+
+@keyframes deeshee{
+    0%{
+        opacity: 0.5;
+        top: -90vh;
+        right: -20%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        right: -10%;
+    }
+}
+@keyframes dooshoo{
+    0%{
+        opacity: 0.5;
+        top: 90vh;
+        left: -10%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        left: 0%;
+    }
+}
+@keyframes deeshee1{
+    0%{
+        opacity: 0.5;
+        top: -90vh;
+        right: -20%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        right: -10%;
+    }
+}
+@keyframes dooshoo1{
+    0%{
+        opacity: 0.5;
+        top: 90vh;
+        left: -10%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        left: 0%;
+    }
+}
+@keyframes deeshee2{
+    0%{
+        opacity: 0.5;
+        top: -90vh;
+        right: -20%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        right: -10%;
+    }
+}
+@keyframes dooshoo2{
+    0%{
+        opacity: 0.5;
+        top: 90vh;
+        left: -10%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        left: 0%;
+    }
+}

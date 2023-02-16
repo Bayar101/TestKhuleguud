@@ -8,11 +8,8 @@ import Shop from "../components/header/shop";
 import Blog from "../components/header/blog";
 import Contact from "../components/header/ContactUs";
 
-
-
-
-
 import Video from "./video";
+import moreHighlights from '../assets/Y2Mate.is - Game Recap Nuggets 134, Warriors 117-wdYwPUMj_gU-360p-1654775870161.mp4'
 import Basketball from "../assets/basketball.png";
 import Faunduel from "../assets/FanDuel-Associated-Press.png";
 import Sblog from "../assets/sblogisticslogo.png";
@@ -24,6 +21,7 @@ import NBA from "../assets/NBA-logo-png.png";
 import Dcrown from "../assets/D_Crown_White.png";
 import Footer from "./footer";
 import Jijigzurag from "../container/jijigZurag";
+import AnimatedSlider from "../components/animatedSlider/animatedSlider";
 // import Video from "./video";
 
 const Investors = () => {
@@ -62,6 +60,7 @@ const Investors = () => {
     },
   ];
   const [show, setShow] = useState(false);
+  const [show1, setShow1] = useState(false);
 
   return (
     <div className="w-full">
@@ -75,7 +74,28 @@ const Investors = () => {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-      <Video />
+      <div className="w-full h-auto relative">
+        <div className="w-full h-auto">
+            <Video />
+            <div
+            className="w-[150px] h-[50px] absolute left-1/2 bottom-0 translate-x-[-50%] bg-black bg-opacity-50 rounded-[50px] text-white
+                flex justify-center items-center uppercase text-[1.5rem]"
+            onClick={() => setShow1(!show1)}
+            >
+            More
+            </div>
+        </div>
+        <div className="w-full h-[auto]">
+            {show1 ? <div className="w-full h-auto bg-[#141414] p-[3%] grid grid-cols-3 gap-[50px]">
+            <video  autoPlay loop muted src={moreHighlights} className='w-full h-auto rounded-[50px]'></video>
+            <video  autoPlay loop muted src={moreHighlights} className='w-full h-auto rounded-[50px]'></video>
+            <video  autoPlay loop muted src={moreHighlights} className='w-full h-auto rounded-[50px]'></video>
+            </div> : null}
+        </div>
+      </div>
+      <div className="w-full h-auto flex justify-center items-center">
+          <AnimatedSlider />
+      </div>
       <div className="w-[full] h-[1000px] bg-[red] px-[100px] pt-[50px]">
         <Jijigzurag />
       </div>
